@@ -1,0 +1,7 @@
+node_modules/*
+.serverless/*
+.webpack/*
+
+#dynamodb
+.dynamodb
+.DS_Store
