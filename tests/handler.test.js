@@ -4,7 +4,10 @@ import supertest from 'supertest';
 const request = supertest(app);
 
 test('savetos3', async () => {
-  const response = await request.post('/savetos3');
+  const response = await request.post('/savetos3')
+    .send({ 'foo': 'bar' }) //body
+    .set('Accept', 'application/json');
+
   expect(response.statusCode).toEqual(200);
   expect(response.text).toEqual('save to S3!');
 });
