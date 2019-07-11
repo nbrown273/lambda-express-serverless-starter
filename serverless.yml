@@ -17,3 +17,21 @@ functions:
       - http:
           path: /
           method: get
+  shortid:
+    handler: index.handler
+    events:
+      - http:
+          path: /shortid
+          method: get
+  uuid:
+    handler: index.handler
+    events:
+      - http:
+          path: /uuid
+          method: get
+  password:
+    handler: index.handler
+    events:
+      - http:
+          path: /password
+          method: get
