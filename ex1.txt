@@ -1,0 +1,18 @@
+Exercise 1:
+
+1. do `npm i cors shortid uuid generate-password`
+
+2. add use cors to app.ts, like:
+
+import express from 'express';
+import cors from 'cors';
+
+const app = express();
+app.use(cors());
+
+3. add three get endpoints to serverless.yml:
+/id
+/uuid
+/password
+
+4. add those three routes to app.ts, so when you hit that endpoint you get a new id, uuid, or password
