@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "local": "serverless offline start",
-    "deploy:dev": "sls deploy --stage dev",
+    "deploy:non-prod": "sls deploy --stage non-prod",
     "log": "serverless logs -f $FUNCTION -s $STAGE",
     "log:tail": "serverless logs -f $FUNCTION -s $STAGE -t"
   },
