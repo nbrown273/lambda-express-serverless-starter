@@ -1,17 +1,21 @@
-import { ddb } from './environment';
+// const AWS = require('aws-sdk');
 
-export const getDataFromKey = async (table, id) => {
-  const params = {
-    TableName: table,
-    Key: {
-      _id: id
-    }
-  };
+// const ddb = new AWS.DynamoDB.DocumentClient({
+//   region: 'us-east-1'
+// });
 
-  try {
-    return await ddb.get(params).promise();
-  } catch (e) {
-    console.error(JSON.stringify(e));
-    return e;
-  }
-};
+// export const getDataFromKey = async (table, id) => {
+//   const params = {
+//     TableName: table,
+//     Key: {
+//       _id: id
+//     }
+//   };
+
+//   try {
+//     return await ddb.get(params).promise();
+//   } catch (e) {
+//     console.error(JSON.stringify(e));
+//     return e;
+//   }
+// };

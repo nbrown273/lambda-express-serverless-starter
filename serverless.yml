@@ -1,14 +1,8 @@
-service: my-express-application
+service: lambda-express
 
 plugins:
-  - serverless-webpack
   - serverless-offline
-
-custom:
-  webpack:
-    webpackConfig: ./webpack.config.js
-    includeModules: true
-  myStage: ${opt:stage, self:provider.stage}
+  - serverless-plugin-typescript
 
 provider:
   name: aws
@@ -17,15 +11,9 @@ provider:
   region: us-east-1
 
 functions:
-  saveObjectToS3:
+  ping:
     handler: index.handler
     events:
       - http:
-          path: savetos3
-          method: post
-  getObjectFromS3:
-    handler: index.handler
-    events:
-      - http:
-          path: getfroms3
-          method: post
+          path: /
+          method: get
