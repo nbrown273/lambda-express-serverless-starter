@@ -3,12 +3,14 @@ import cors from 'cors'
 import shortid from 'shortid';
 import uuidv4 from 'uuid/v4';
 import generator from 'generate-password';
+const fs = require('fs');
 
 const app = express();
 app.use(cors());
 
 app.get('/', function (req, res) {
-  res.send('hello world');
+  const contents = fs.readFileSync(`./public/index.html`);
+  res.send(contents.toString())
 });
 
 app.get('/shortid', function (req, res) {
@@ -25,4 +27,5 @@ app.get('/password', function (req, res) {
     numbers: true
   }))
 });
+
 export default app;

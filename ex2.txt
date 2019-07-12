@@ -1,0 +1,9 @@
+Exercise 2: Open a site from S3 with our lambda
+
+1. 
+
+do `mkdir public`
+
+2. get a website, or your own site and copy all the contents to the public folder
+
+3. change the '/' path in your app.js to read the contents of public/index.html
