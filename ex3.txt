@@ -1,0 +1,5 @@
+1. `git checkout ex3`
+2. `npm i`
+3. edit file public/index.html, add your endpoint for getting the short id from prior exercise
+4. run locally: http://localhost:3000/form
+
