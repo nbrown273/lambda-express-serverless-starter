@@ -12,7 +12,7 @@ provider:
     - Effect: "Allow" 
       Action: "dynamodb:GetItem" 
       Resource:  
-        - "arn:aws:dynamodb:us-east-1:988615802188:table/user"
+        - "*"
     - Effect: "Allow" 
       Action: 
         - "s3:*" 
