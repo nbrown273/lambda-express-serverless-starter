@@ -1,0 +1,17 @@
+1. `npm i cors aws-sdk`
+2. in the AWS console got to DynamoDB create a table called `user` and `_id` as the key
+3. add two records to user 
+{
+  "_id": "rommel",
+  "file": "rommel.docx"
+} and
+{
+  "_id": "yourname",
+  "file": "yourname.docx"
+}
+4. create those two files in word
+5. go to S3, create a bucket called 'docs-serverless-class` in US East (N. Virginia) and upload those two files
+6 create route `/get-doc/:userid` in serverless.yml file
+7. in the app.js file add that route.
+8. copy the files dynamoCalls.ts and getFromS3.ts to the src folder
+9. import those functions in your app.ts 
