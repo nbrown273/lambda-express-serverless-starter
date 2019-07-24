@@ -1,4 +1,4 @@
-service: lambda-express-class
+service: lambda-express-class-exercise3
 
 plugins:
   - serverless-offline
@@ -15,4 +15,10 @@ functions:
     events:
       - http:
           path: /
+          method: get
+  form:
+    handler: index.handler
+    events:
+      - http:
+          path: /form
           method: get
