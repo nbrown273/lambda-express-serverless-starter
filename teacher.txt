@@ -1,0 +1,5 @@
+1. look at the logs from the command line
+
+2. look at API gateway, test from there
+
+3. look at the lambda in AWS, test from there

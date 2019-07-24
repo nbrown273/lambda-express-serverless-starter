@@ -15,4 +15,16 @@ app.use(cors());
 /uuid
 /password
 
-4. add those three routes to app.ts, so when you hit that endpoint you get a new shortid, uuid, or password
+4. add those three routes to app.ts, so when you hit that endpoint you get a new shortid, uuid, or password.
+
+5. leave some console.logs in those functions, so we can look at the logs.
+
+6. Make sure to return a json object
+
+7. Leave the hello world endpoint.
+
+8. Test locally by running `npm run local` and hitting the endpoints http://localhost:3000/shortid, etc.
+
+9. Deploy to AWS by running `npm run deploy:non-prod`
+
+10.test with the other urls to make sure your code was deployed correctly
