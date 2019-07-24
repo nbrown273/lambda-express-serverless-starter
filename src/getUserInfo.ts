@@ -1,11 +1,11 @@
-import { getDataFromKey } from './dynamoCalls'
+import { getDataFromDynamoDB } from './dynamoCalls'
 
 export const getUserInfo = async (req, resp, next) => {
   try {
     const user = req.params.userid;
     console.log('user', user);
 
-    const userData = await getDataFromKey('user', user);
+    const userData = await getDataFromDynamoDB('user', user);
     console.log('userData', userData);
 
     req.userData = userData.Item;

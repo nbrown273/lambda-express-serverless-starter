@@ -4,7 +4,7 @@ const ddb = new AWS.DynamoDB.DocumentClient({
   region: 'us-east-1'
 });
 
-export const getDataFromKey = async (table, id) => {
+export const getDataFromDynamoDB = async (table, id) => {
   const params = {
     TableName: table,
     Key: {
