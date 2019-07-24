@@ -12,7 +12,9 @@ app.get('/', function (req, res) {
 });
 
 app.get('/shortid', function (req, res) {
-  res.send({shortid: shortid.generate()});
+  const sid = shortid.generate();
+  console.log('sid', sid);
+  res.send({shortid: sid});
 });
 
 app.get('/uuid', function (req, res) {
