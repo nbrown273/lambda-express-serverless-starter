@@ -11,8 +11,8 @@ const app = express();
 app.use(cors());
 
 3. add three get endpoints to serverless.yml:
-/id
+/shortid
 /uuid
 /password
 
-4. add those three routes to app.ts, so when you hit that endpoint you get a new id, uuid, or password
+4. add those three routes to app.ts, so when you hit that endpoint you get a new shortid, uuid, or password
