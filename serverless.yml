@@ -1,4 +1,4 @@
-service: lambda-express
+service: lambda-express-class
 
 plugins:
   - serverless-offline
