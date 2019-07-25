@@ -4,7 +4,7 @@ const s3 = new AWS.S3()
 export const getS3Object = async (req, resp) => {
   try {
     const params = {
-      Bucket: 'docs-serverless-class',
+      Bucket: 'docs-serverless-class-7872',
       Key: req.userData.file
     }
     const filestream = s3.getObject(params).createReadStream()
